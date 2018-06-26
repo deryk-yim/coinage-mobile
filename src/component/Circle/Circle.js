@@ -9,10 +9,12 @@ export default class Circle extends Component {
         backgroundColor: PropTypes.string,
         backgroundColors: PropTypes.arrayOf(PropTypes.string),
         opacity: PropTypes.number,
+        fill: PropTypes.bool,
     }
 
     static defaultProps = {
         size: 300,
+        fill: true,
         backgroundColor: '#FFFFFF',
         backgroundColors: ['#F82279', '#E82887', '#CE33A1', '#A643C8','#934CDB'],
     }

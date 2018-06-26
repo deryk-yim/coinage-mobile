@@ -5,3 +5,9 @@ export const THEME_COLOR = {
     primaryColor1: '#934CDB',
     primaryColor2: '#F82279',
 };
+
+export const LEGEND_COLOR = [
+    ['#DDD2BB', '#FD9722'],
+    ['#F82279','#934CDB'],
+    ['#5189DC', '#944BDB']
+];

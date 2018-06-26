@@ -5,8 +5,10 @@ import PropTypes from 'prop-types';
 const ScrollableList = (props) => {
     const { style, height, data } = props;
     const display = data.map((item, key) => {
-        return React.cloneElement(props.renderItem(item), { key });
+        var elem = React.cloneElement(props.renderItem(item), { key });
+        return elem;
     });
+    const propsHeight = props.height;
 
     const { container, scrollViewStyle } = StyleSheet.create({
         container: {
@@ -24,6 +26,8 @@ const ScrollableList = (props) => {
             <ScrollView
                 ListFooterComponent={<Text>Hello</Text>}
                 showsVerticalScrollIndicator={false}
+                snapToInterval={1}
+                snapToAlignment="start"
                 style={scrollViewStyle}
             >
                 <View>

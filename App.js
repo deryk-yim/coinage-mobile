@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Background>
       <View style={styles.container}>
-        <AmountScreen/>
+        <Tracking/>
       </View>
     </Background>
   )
