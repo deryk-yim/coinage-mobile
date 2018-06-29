@@ -12,11 +12,7 @@ import Tracking from './src/container/Tracking/index'
 
 const App = () => {
   return (
-    <Background>
-      <View style={styles.container}>
-        <Tracking/>
-      </View>
-    </Background>
+    <Tracking/>
   )
 }
 export default App;

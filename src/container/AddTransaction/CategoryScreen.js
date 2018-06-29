@@ -9,6 +9,7 @@ import {
 import ScrollableList from '../../component/ScrollableList/ScrollableList';
 import Label from '../../component/Label/Label';
 import Select from '../../component/Select/Select';
+import Layout from '../../component/Layout/Layout'
 
 import { DEFAULT_CATEGORIES, SORTBY } from '../../constants/defaults';
 
@@ -25,7 +26,7 @@ export default class CategoryScreen extends PureComponent {
         } = styles;
 
         return (
-            <View style={container}>
+            <Layout>
                 <Label
                     style={[placeholderSections, { flex: 0.1 }]}
                     value={'Navigation'}
@@ -62,7 +63,7 @@ export default class CategoryScreen extends PureComponent {
                     style={[placeholderSections, { flex: 0.2 }]}
                     value={'Controls'}
                 />
-            </View>
+            </Layout>
         )
     }
 }

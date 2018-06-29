@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types';
 import Background  from '../Background/Background';
 import Header from './Header';
