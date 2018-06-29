@@ -1,4 +1,7 @@
 import PropTypes from 'prop-types';
+import Background  from '../Background/Background';
+import Header from './Header';
+import Body from './Body';
 
 const Layout = (props) => {
     const { bgColors, bgStart, bgEnd } = props;
